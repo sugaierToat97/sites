@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lumen | Product Analytics Without the Noise</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] } } } }
+</script>
+</head>
+<body class="bg-white font-sans text-slate-900 antialiased">
+<header class="sticky top-0 z-50 border-b border-slate-100 bg-white/80 backdrop-blur">
+  <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+    <a href="#" class="flex items-center gap-2 text-lg font-bold">
+      <span class="grid h-7 w-7 place-items-center rounded-lg bg-indigo-600 text-sm text-white">L</span>Lumen
+    </a>
+    <ul class="hidden gap-8 text-sm font-medium text-slate-600 md:flex">
+      <li><a href="#features" class="transition hover:text-indigo-600">Features</a></li>
+      <li><a href="#pricing" class="transition hover:text-indigo-600">Pricing</a></li>
+      <li><a href="#customers" class="transition hover:text-indigo-600">Customers</a></li>
+    </ul>
+    <a href="#start" class="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-indigo-700">Start free</a>
+  </nav>
+</header>
+
+<main>
+  <section class="bg-gradient-to-b from-indigo-50 to-white px-5 pb-20 pt-16 text-center md:pt-28">
+    <div class="mx-auto max-w-3xl">
+      <p class="mx-auto w-fit rounded-full bg-indigo-100 px-4 py-1 text-sm font-medium text-indigo-700">New: AI-written weekly insights</p>
+      <h1 class="mt-6 text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">Analytics your whole team will actually open.</h1>
+      <p class="mx-auto mt-6 max-w-xl text-lg text-slate-600">Lumen turns raw events into clear answers. No SQL, no dashboards to maintain, no waiting on data.</p>
+      <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
+        <a href="#start" class="rounded-lg bg-indigo-600 px-7 py-3 font-semibold text-white shadow-lg shadow-indigo-600/20 transition hover:-translate-y-0.5 hover:bg-indigo-700">Start for free</a>
+        <a href="#features" class="rounded-lg border border-slate-200 px-7 py-3 font-semibold transition hover:bg-slate-50">See how it works</a>
+      </div>
+    </div>
+    <div class="mx-auto mt-16 max-w-4xl rounded-2xl border border-slate-200 bg-white p-4 shadow-2xl shadow-indigo-900/10">
+      <div class="grid grid-cols-3 gap-3 text-left">
+        <div class="rounded-xl bg-slate-50 p-4"><p class="text-xs text-slate-500">Active users</p><p class="mt-1 text-2xl font-bold">48.2k</p></div>
+        <div class="rounded-xl bg-slate-50 p-4"><p class="text-xs text-slate-500">Conversion</p><p class="mt-1 text-2xl font-bold">6.4%</p></div>
+        <div class="rounded-xl bg-slate-50 p-4"><p class="text-xs text-slate-500">Retention</p><p class="mt-1 text-2xl font-bold">81%</p></div>
+      </div>
+      <div class="mt-3 flex h-40 items-end gap-2 rounded-xl bg-slate-50 p-4">
+        <span class="w-full rounded-t bg-indigo-200" style="height:35%"></span>
+        <span class="w-full rounded-t bg-indigo-300" style="height:50%"></span>
+        <span class="w-full rounded-t bg-indigo-300" style="height:42%"></span>
+        <span class="w-full rounded-t bg-indigo-400" style="height:68%"></span>
+        <span class="w-full rounded-t bg-indigo-500" style="height:80%"></span>
+        <span class="w-full rounded-t bg-indigo-600" style="height:100%"></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="px-5 py-20 md:py-28">
+    <div class="mx-auto max-w-6xl">
+      <h2 class="max-w-xl text-3xl font-bold tracking-tight md:text-4xl">Everything you need. Nothing you don't.</h2>
+      <div class="mt-12 grid gap-6 md:grid-cols-3">
+        <article class="rounded-2xl border border-slate-200 p-6 transition hover:border-indigo-300 hover:shadow-lg">
+          <div class="grid h-10 w-10 place-items-center rounded-lg bg-indigo-100 text-indigo-600">&#9889;</div>
+          <h3 class="mt-4 text-lg font-semibold">Instant setup</h3>
+          <p class="mt-2 text-slate-600">One script tag. Events flow in within minutes, fully typed and deduplicated.</p>
+        </article>
+        <article class="rounded-2xl border border-slate-200 p-6 transition hover:border-indigo-300 hover:shadow-lg">
+          <div class="grid h-10 w-10 place-items-center rounded-lg bg-indigo-100 text-indigo-600">&#128269;</div>
+          <h3 class="mt-4 text-lg font-semibold">Plain-English queries</h3>
+          <p class="mt-2 text-slate-600">Ask "why did signups drop Tuesday?" and get a chart with the answer.</p>
+        </article>
+        <article class="rounded-2xl border border-slate-200 p-6 transition hover:border-indigo-300 hover:shadow-lg">
+          <div class="grid h-10 w-10 place-items-center rounded-lg bg-indigo-100 text-indigo-600">&#128274;</div>
+          <h3 class="mt-4 text-lg font-semibold">Privacy by default</h3>
+          <p class="mt-2 text-slate-600">No cookies, EU hosting, and SOC 2 Type II certified from day one.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="customers" class="bg-slate-50 px-5 py-20 md:py-28">
+    <div class="mx-auto max-w-6xl">
+      <h2 class="text-center text-3xl font-bold tracking-tight md:text-4xl">Loved by product teams</h2>
+      <div class="mt-12 grid gap-6 md:grid-cols-2">
+        <figure class="rounded-2xl bg-white p-8 shadow-sm">
+          <blockquote class="text-lg">We replaced three tools with Lumen and cut our weekly reporting from a day to ten minutes.</blockquote>
+          <figcaption class="mt-5 text-sm"><span class="font-semibold">Priya Nair</span> <span class="text-slate-500">&middot; Head of Product, Fieldwork</span></figcaption>
+        </figure>
+        <figure class="rounded-2xl bg-white p-8 shadow-sm">
+          <blockquote class="text-lg">Finally, analytics that designers and founders use without asking an engineer for help.</blockquote>
+          <figcaption class="mt-5 text-sm"><span class="font-semibold">Tom Becker</span> <span class="text-slate-500">&middot; Founder, Northside</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="px-5 py-20 md:py-28">
+    <div class="mx-auto max-w-4xl">
+      <h2 class="text-center text-3xl font-bold tracking-tight md:text-4xl">Simple pricing</h2>
+      <div class="mt-12 grid gap-6 md:grid-cols-2">
+        <article class="rounded-2xl border border-slate-200 p-8">
+          <h3 class="font-semibold">Starter</h3>
+          <p class="mt-3 text-4xl font-extrabold">$0<span class="text-base font-medium text-slate-500">/mo</span></p>
+          <ul class="mt-6 space-y-2 text-slate-600">
+            <li>&#10003; 10k events per month</li>
+            <li>&#10003; 3 team members</li>
+            <li>&#10003; 30-day history</li>
+          </ul>
+          <a href="#start" class="mt-8 block rounded-lg border border-slate-200 py-3 text-center font-semibold transition hover:bg-slate-50">Get started</a>
+        </article>
+        <article class="rounded-2xl bg-indigo-600 p-8 text-white shadow-xl shadow-indigo-600/30">
+          <h3 class="font-semibold">Growth</h3>
+          <p class="mt-3 text-4xl font-extrabold">$49<span class="text-base font-medium text-indigo-200">/mo</span></p>
+          <ul class="mt-6 space-y-2 text-indigo-100">
+            <li>&#10003; 1M events per month</li>
+            <li>&#10003; Unlimited members</li>
+            <li>&#10003; AI weekly insights</li>
+          </ul>
+          <a href="#start" class="mt-8 block rounded-lg bg-white py-3 text-center font-semibold text-indigo-700 transition hover:bg-indigo-50">Start free trial</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="start" class="px-5 pb-20 md:pb-28">
+    <div class="mx-auto max-w-4xl rounded-3xl bg-slate-900 px-6 py-16 text-center text-white">
+      <h2 class="text-3xl font-bold tracking-tight md:text-4xl">See your data clearly by tonight.</h2>
+      <form class="mx-auto mt-8 flex max-w-md flex-col gap-3 sm:flex-row">
+        <input type="email" required placeholder="you@company.com" aria-label="Work email" class="flex-1 rounded-lg px-4 py-3 text-slate-900 outline-none ring-2 ring-transparent transition focus:ring-indigo-400">
+        <button class="rounded-lg bg-indigo-500 px-6 py-3 font-semibold transition hover:bg-indigo-400">Start free</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="border-t border-slate-100 px-5 py-8 text-sm text-slate-500">
+  <div class="mx-auto flex max-w-6xl flex-col justify-between gap-3 sm:flex-row">
+    <p>&copy; 2026 Lumen Analytics, Inc.</p>
+    <ul class="flex gap-6">
+      <li><a href="#" class="transition hover:text-slate-900">Privacy</a></li>
+      <li><a href="#" class="transition hover:text-slate-900">Terms</a></li>
+      <li><a href="#" class="transition hover:text-slate-900">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

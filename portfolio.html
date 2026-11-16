@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ana Rusu | Product Designer</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: { extend: { fontFamily: { sans: ['DM Sans', 'sans-serif'], display: ['DM Serif Display', 'serif'] } } }
+}
+</script>
+</head>
+<body class="bg-neutral-950 font-sans text-neutral-200 antialiased">
+<header class="fixed inset-x-0 top-0 z-50 bg-neutral-950/80 backdrop-blur">
+  <nav class="mx-auto flex max-w-5xl items-center justify-between px-5 py-5 text-sm">
+    <a href="#" class="font-display text-xl text-white">Ana Rusu</a>
+    <ul class="flex gap-6">
+      <li><a href="#work" class="transition hover:text-white">Work</a></li>
+      <li><a href="#about" class="transition hover:text-white">About</a></li>
+      <li><a href="#contact" class="transition hover:text-white">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="flex min-h-screen items-center px-5 pt-20">
+    <div class="mx-auto w-full max-w-5xl">
+      <p class="text-sm uppercase tracking-[0.25em] text-emerald-400">Product designer</p>
+      <h1 class="mt-5 font-display text-5xl leading-[1.05] text-white sm:text-7xl md:text-8xl">I design calm interfaces for complicated products.</h1>
+      <p class="mt-8 max-w-xl text-lg text-neutral-400">Eight years across fintech, health, and developer tools. Currently open to select freelance work.</p>
+      <a href="#contact" class="mt-10 inline-flex items-center gap-2 rounded-full bg-emerald-400 px-7 py-3 font-medium text-neutral-950 transition hover:gap-4 hover:bg-emerald-300">Let's talk <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </section>
+
+  <section id="work" class="px-5 py-20 md:py-28">
+    <div class="mx-auto max-w-5xl">
+      <h2 class="font-display text-4xl text-white md:text-5xl">Selected work</h2>
+      <div class="mt-12 grid gap-8 md:grid-cols-2">
+        <a href="#" class="group block">
+          <div class="aspect-[4/3] overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-800">
+            <div class="h-full w-full transition duration-500 group-hover:scale-105 group-hover:bg-white/5"></div>
+          </div>
+          <h3 class="mt-4 text-xl font-bold text-white">Brightside Banking</h3>
+          <p class="text-neutral-400">Mobile app redesign &middot; 2.1M users</p>
+        </a>
+        <a href="#" class="group block md:mt-16">
+          <div class="aspect-[4/3] overflow-hidden rounded-2xl bg-gradient-to-br from-violet-500 to-indigo-900">
+            <div class="h-full w-full transition duration-500 group-hover:scale-105 group-hover:bg-white/5"></div>
+          </div>
+          <h3 class="mt-4 text-xl font-bold text-white">Pulse Health</h3>
+          <p class="text-neutral-400">Patient portal &middot; Design system</p>
+        </a>
+        <a href="#" class="group block">
+          <div class="aspect-[4/3] overflow-hidden rounded-2xl bg-gradient-to-br from-amber-400 to-orange-700">
+            <div class="h-full w-full transition duration-500 group-hover:scale-105 group-hover:bg-white/5"></div>
+          </div>
+          <h3 class="mt-4 text-xl font-bold text-white">Forge CLI</h3>
+          <p class="text-neutral-400">Developer docs and onboarding</p>
+        </a>
+        <a href="#" class="group block md:mt-16">
+          <div class="aspect-[4/3] overflow-hidden rounded-2xl bg-gradient-to-br from-rose-500 to-fuchsia-900">
+            <div class="h-full w-full transition duration-500 group-hover:scale-105 group-hover:bg-white/5"></div>
+          </div>
+          <h3 class="mt-4 text-xl font-bold text-white">Oddly Market</h3>
+          <p class="text-neutral-400">E-commerce brand and storefront</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="px-5 py-20 md:py-28">
+    <div class="mx-auto grid max-w-5xl gap-12 md:grid-cols-5">
+      <h2 class="font-display text-4xl text-white md:col-span-2 md:text-5xl">About</h2>
+      <div class="space-y-5 text-lg text-neutral-400 md:col-span-3">
+        <p>I believe good design disappears. People finish what they came to do and never think about the interface.</p>
+        <p>I work closely with engineers, prototype in code, and test early with real users. Previously at Stripe-sized teams and two-person startups.</p>
+        <ul class="flex flex-wrap gap-2 pt-2 text-sm">
+          <li class="rounded-full border border-neutral-700 px-4 py-1.5 transition hover:border-emerald-400 hover:text-emerald-400">Product strategy</li>
+          <li class="rounded-full border border-neutral-700 px-4 py-1.5 transition hover:border-emerald-400 hover:text-emerald-400">Design systems</li>
+          <li class="rounded-full border border-neutral-700 px-4 py-1.5 transition hover:border-emerald-400 hover:text-emerald-400">Prototyping</li>
+          <li class="rounded-full border border-neutral-700 px-4 py-1.5 transition hover:border-emerald-400 hover:text-emerald-400">User research</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="px-5 py-20 md:py-28">
+    <div class="mx-auto max-w-5xl">
+      <h2 class="font-display text-4xl text-white md:text-5xl">Kind words</h2>
+      <div class="mt-12 grid gap-6 md:grid-cols-2">
+        <figure class="rounded-2xl bg-neutral-900 p-8 transition hover:bg-neutral-800/80">
+          <blockquote class="text-lg text-neutral-300">Ana untangled a year of product debt in six weeks. Our onboarding completion doubled.</blockquote>
+          <figcaption class="mt-5 text-sm text-neutral-500">Elena V., CPO at Brightside</figcaption>
+        </figure>
+        <figure class="rounded-2xl bg-neutral-900 p-8 transition hover:bg-neutral-800/80">
+          <blockquote class="text-lg text-neutral-300">The rare designer who cares as much about the edge cases as the hero screen.</blockquote>
+          <figcaption class="mt-5 text-sm text-neutral-500">Marcus L., Engineering Lead at Pulse</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="px-5 py-24 md:py-32">
+    <div class="mx-auto max-w-5xl">
+      <h2 class="font-display text-5xl text-white md:text-7xl">Have a project in mind?</h2>
+      <a href="mailto:hello@anarusu.design" class="mt-8 inline-block border-b-2 border-emerald-400 pb-1 text-xl text-emerald-400 transition hover:text-emerald-300 md:text-3xl">hello@anarusu.design</a>
+    </div>
+  </section>
+</main>
+
+<footer class="border-t border-neutral-900 px-5 py-8 text-sm text-neutral-500">
+  <div class="mx-auto flex max-w-5xl flex-col justify-between gap-3 sm:flex-row">
+    <p>&copy; 2026 Ana Rusu</p>
+    <ul class="flex gap-6">
+      <li><a href="#" class="transition hover:text-white">Dribbble</a></li>
+      <li><a href="#" class="transition hover:text-white">LinkedIn</a></li>
+      <li><a href="#" class="transition hover:text-white">Read.cv</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

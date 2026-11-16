@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ember & Oak | Wood-Fired Kitchen</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] },
+      colors: { ember: '#c2410c', char: '#1c1917', cream: '#faf5ee' }
+    }
+  }
+}
+</script>
+</head>
+<body class="bg-cream font-sans text-char antialiased">
+<header class="fixed inset-x-0 top-0 z-50 bg-char/90 backdrop-blur">
+  <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 text-cream">
+    <a href="#" class="font-serif text-xl font-bold">Ember &amp; Oak</a>
+    <ul id="menu" class="absolute inset-x-0 top-full hidden flex-col gap-4 bg-char px-5 py-6 text-sm md:static md:flex md:flex-row md:gap-8 md:bg-transparent md:p-0">
+      <li><a href="#menu-items" class="transition hover:text-orange-400">Menu</a></li>
+      <li><a href="#about" class="transition hover:text-orange-400">Story</a></li>
+      <li><a href="#reviews" class="transition hover:text-orange-400">Reviews</a></li>
+      <li><a href="#reserve" class="rounded-full bg-ember px-4 py-2 transition hover:bg-orange-600">Reserve</a></li>
+    </ul>
+    <button id="toggle" class="md:hidden" aria-label="Toggle menu" aria-expanded="false">
+      <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </nav>
+</header>
+
+<main>
+  <section class="relative flex min-h-screen items-center bg-gradient-to-br from-char via-stone-900 to-ember/80 px-5 pt-20 text-cream">
+    <div class="mx-auto w-full max-w-6xl">
+      <p class="mb-4 text-sm uppercase tracking-[0.3em] text-orange-300">Wood-fired kitchen</p>
+      <h1 class="max-w-2xl font-serif text-5xl font-bold leading-tight md:text-7xl">Fire, salt, and patience.</h1>
+      <p class="mt-6 max-w-lg text-lg text-stone-300">Seasonal plates cooked over oak embers, served in a room built for long dinners.</p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="#reserve" class="rounded-full bg-ember px-7 py-3 font-medium transition hover:-translate-y-0.5 hover:bg-orange-600">Book a table</a>
+        <a href="#menu-items" class="rounded-full border border-stone-500 px-7 py-3 font-medium transition hover:border-cream hover:bg-white/10">See the menu</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu-items" class="px-5 py-20 md:py-28">
+    <div class="mx-auto max-w-6xl">
+      <h2 class="font-serif text-3xl font-bold md:text-5xl">From the fire</h2>
+      <div class="mt-12 grid gap-6 md:grid-cols-3">
+        <article class="rounded-2xl bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+          <span class="text-sm font-semibold text-ember">Starter</span>
+          <h3 class="mt-2 font-serif text-2xl font-bold">Charred Octopus</h3>
+          <p class="mt-3 text-stone-600">Smoked paprika, confit potato, lemon oil.</p>
+          <p class="mt-6 font-semibold">$18</p>
+        </article>
+        <article class="rounded-2xl bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+          <span class="text-sm font-semibold text-ember">Main</span>
+          <h3 class="mt-2 font-serif text-2xl font-bold">Oak-Roasted Ribeye</h3>
+          <p class="mt-3 text-stone-600">Dry-aged 40 days, bone marrow butter, watercress.</p>
+          <p class="mt-6 font-semibold">$46</p>
+        </article>
+        <article class="rounded-2xl bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+          <span class="text-sm font-semibold text-ember">Dessert</span>
+          <h3 class="mt-2 font-serif text-2xl font-bold">Burnt Honey Tart</h3>
+          <p class="mt-3 text-stone-600">Crème fraîche, sea salt, toasted walnuts.</p>
+          <p class="mt-6 font-semibold">$12</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="bg-char px-5 py-20 text-cream md:py-28">
+    <div class="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
+      <div class="aspect-[4/3] rounded-2xl bg-gradient-to-tr from-ember to-amber-500"></div>
+      <div>
+        <h2 class="font-serif text-3xl font-bold md:text-5xl">One fire. Twelve years.</h2>
+        <p class="mt-6 text-stone-300">We started with a single hearth and a short menu. Today we still cook everything over local oak, buy from farms within 60 miles, and change the menu with the weather.</p>
+        <dl class="mt-8 grid grid-cols-3 gap-4 text-center">
+          <div><dt class="font-serif text-3xl font-bold text-orange-400">12</dt><dd class="text-sm text-stone-400">Years</dd></div>
+          <div><dt class="font-serif text-3xl font-bold text-orange-400">14</dt><dd class="text-sm text-stone-400">Local farms</dd></div>
+          <div><dt class="font-serif text-3xl font-bold text-orange-400">1</dt><dd class="text-sm text-stone-400">Hearth</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="px-5 py-20 md:py-28">
+    <div class="mx-auto max-w-6xl">
+      <h2 class="font-serif text-3xl font-bold md:text-5xl">What guests say</h2>
+      <div class="mt-12 grid gap-6 md:grid-cols-2">
+        <figure class="rounded-2xl border border-stone-200 p-8 transition hover:border-ember">
+          <blockquote class="text-lg">The best steak I've had in years. The smoke is in everything, and somehow it never overwhelms.</blockquote>
+          <figcaption class="mt-4 text-sm font-semibold text-stone-500">Maria T.</figcaption>
+        </figure>
+        <figure class="rounded-2xl border border-stone-200 p-8 transition hover:border-ember">
+          <blockquote class="text-lg">Warm room, unhurried service, and a dessert I still think about weeks later.</blockquote>
+          <figcaption class="mt-4 text-sm font-semibold text-stone-500">Daniel R.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="reserve" class="bg-ember px-5 py-20 text-center text-white md:py-28">
+    <div class="mx-auto max-w-2xl">
+      <h2 class="font-serif text-3xl font-bold md:text-5xl">Save your seat by the fire</h2>
+      <p class="mt-4 text-orange-100">Open Tuesday to Sunday, 5pm until late.</p>
+      <form class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <input type="email" required placeholder="Your email" aria-label="Email" class="flex-1 rounded-full px-5 py-3 text-char outline-none ring-2 ring-transparent transition focus:ring-char">
+        <button class="rounded-full bg-char px-7 py-3 font-medium transition hover:bg-stone-800">Request a table</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-char px-5 py-10 text-sm text-stone-400">
+  <div class="mx-auto flex max-w-6xl flex-col justify-between gap-4 md:flex-row">
+    <p>&copy; 2026 Ember &amp; Oak. 118 Mill Street.</p>
+    <p>hello@emberandoak.com &middot; (555) 014-2290</p>
+  </div>
+</footer>
+
+<script>
+const menu = document.getElementById('menu')
+const toggle = document.getElementById('toggle')
+toggle.addEventListener('click', () => {
+  const open = menu.classList.toggle('hidden')
+  toggle.setAttribute('aria-expanded', String(!open))
+})
+menu.addEventListener('click', e => {
+  if (e.target.closest('a')) {
+    menu.classList.add('hidden')
+    toggle.setAttribute('aria-expanded', 'false')
+  }
+})
+</script>
+</body>
+</html>
